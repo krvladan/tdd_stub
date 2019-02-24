@@ -1,10 +1,10 @@
 #include "gtest/gtest.h"
-
+#include "game.h"
 
 namespace
 {
 
-class MyTestFixture: public testing::Test
+class BowlingGameTest: public testing::Test
 {
   void SetUp() override
   {
@@ -12,9 +12,9 @@ class MyTestFixture: public testing::Test
   }
 };
 
-TEST_F(MyTestFixture, test1)
+TEST_F(BowlingGameTest, GutterGame)
 {
-  ASSERT_TRUE(true);
+  Game g;
 }
 
 }
