@@ -1,6 +1,10 @@
 project(tdd_stub)
 
-add_library(${PROJECT_NAME}_lib STATIC game.cpp)
+set(LIB_SOURCE_FILES
+  tdd_stub.cpp
+  )
+
+add_library(${PROJECT_NAME}_lib STATIC ${LIB_SOURCE_FILES})
 add_executable(${PROJECT_NAME} main.cpp)
 target_link_libraries(${PROJECT_NAME} ${PROJECT_NAME}_lib)
 
